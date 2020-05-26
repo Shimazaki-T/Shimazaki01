@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+.container{
+  max-width: 1100px;
+  display: flex;
+  align-items: top;
+  margin:  0;
+  margin-left: 9.75%;
+  padding: 0;
+}
+
+.item{
+   margin:0 ;
+   padding:2rem ;
+}
+
+header{
+  background-color: #66ccff;
+  color: #ffffff;
+}
+
+article{
+  background-color: #33ff33;
+  color: #ffffff;
+  margin-right: 0;
+  width: 72%;
+}
+
+aside{
+  background-color: #ffcc00;
+  margin-left: 0;
+  width: 28%;
+}
+a{
+  color: #ffffff;
+}

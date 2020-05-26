@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+html{
+ font-size: 100%;
+}
+
+body{
+ font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+ line-height: 1.7;
+ background-color: #000;
+}
+
+ p{
+ text-decoration: none;
+ color: white;
+}
+
+a{
+  color: #33ffff;
+}
+
+a:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+header h1, h2, h3, li{
+  color: #fff;
+}
+
+.page-header{
+   display: flex;
+   justify-content: space-between;
+}
+
+.wrapper {
+   max-width: 1300px;
+   margin: 0 auto;
+   padding: 0 4%;
+}
+main {
+  width: 74%;
+
+  margin: 0 5%;
+  padding: 0 4%;
+}
+aside {
+  width: 22%;
+
+  margin: 0 auto;
+  padding: 0 4%;
+}
+footer {
+  background-color: #333333;
+  max-width: 1300px;
+  margin: 3rem auto;
+  padding: 0 4%;
+}
+.main-nav{
+   display: flex;
+   font-size: 1.25rem;
+   text-transform: uppercase;
+   margin-top: 2.5rem;
+   list-style: none;
+}
+.main-nav li{
+   margin-left: 2.5rem;
+}
+.main-nav li:hover{
+   background-color: #fff;
+   color: #000;
+}
+
+
+.home-content{
+   text-align: center;
+   margin-top: 10%;
+}
+
+.home-content p{
+   font-size: 1.25rem;
+   margin: 10px 0 42px;
+}
+
+.page-title{
+   font-size: 5rem;
+}
+.container{
+  display: flex;
+  margin-top: 3rem;
+}
+
+.forborder{
+  border-bottom: 1.5px solid #aaa;
+}
+.containerf{
+  display: flex;
+  justify-content:space-between;
+}
+
+input,select, textarea{
+  background-color: white;
+}

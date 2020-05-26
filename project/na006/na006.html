@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+ <head>
+  <meta charset="UTF-8">
+  <title>na006</title>
+  <meta name="discription" content="html,css,Javascriptの練習">
+  <script type="text/javascript">
+   function EVENT1(){window.alert("うんこ！")}
+   function EVENT2(){if( confirm("OK(Yes).Cancel(No)で行き先を選ぶ")){
+     location.href="../na003/na003.html"}
+     else{
+     location.href="../natop.html"}}
+   function EVENT3(){window.open("../na001/na001.html")}
+   function EVENT4(){window.open("../../JavaScriptPractice/JS001.html")}
+  </script>
+ </head>
+ <body>
+  <h1>JavaScriptの練習、はじめました。</h1>
+  <p>もはやどこがJavaScriptで、どこがそうでないかはわかるまい...</p>
+  <form>
+  <input type="button" value="うんこスイッチ" onClick="EVENT1()">
+  <input type="button" value="うんこスイッチ" onClick="EVENT2()">
+  <input type="button" value="うんこスイッチ" onClick="EVENT3()">
+  <a onClick="EVENT4()">さらなるうんこ</a><br>
+  <p>ここから先にうんこはない。</p>
+  </form>
+ </body>
+</html>

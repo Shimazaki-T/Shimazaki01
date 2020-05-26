@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+html{
+ font-size: 100%;
+}
+
+body{
+ font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+ line-height: 1.7;
+ color: #000;
+}
+
+a{
+ text-decoration: none;
+ color: white;
+}
+li a:hover{
+  color:black;
+  background-color:white;
+}
+img{
+ max-width: 100%;
+}
+
+header li{
+  color: #fff;
+}
+
+h1{
+   color: #33ffff;
+   text-decoration:underline;
+}
+
+footer{
+   margin-top: 3rem;
+}
+
+.page-header{
+   display: flex;
+   justify-content: space-between;
+}
+
+.wrapper{
+   max-width: 1300px;
+   margin: 0 auto;
+   padding: 0 4%;
+}
+
+.main-nav{
+   display: flex;
+   font-size: 1.25rem;
+   text-transform: uppercase;
+   margin-top: 2.5rem;
+   list-style: none;
+}
+.main-nav li{
+   margin-left: 2.5rem;
+}
+.main-nav li:hover{
+   background-color: #fff;
+   color: #000;
+}
+
+
+.home-content{
+   text-align: center;
+   margin-top: 10%;
+}
+
+.home-content p{
+   font-size: 1.25rem;
+   margin: 10px 0 42px;
+}
+
+.page-title{
+   font-size: 5rem;
+}
+
+.button{
+   color: #fff;
+   font-size: 1.5rem;
+   background-color: #000;
+   border-radius: 5px;
+   padding: 18px 32px;
+
+}
+
+.button:hover{
+  color: #000;
+   background-color: #fff;
+}
+
+.big-bg {
+   background-size: cover;
+   background-position: center top;
+   background-repeat: no-repeat;
+}
+
+#home {
+   background-color: #000;
+   background-image: url(bbsall01.jpg);
+   background-position: top center;
+   min-height: 100vh;
+   min-width: 100vh;
+}
+
+#home .page-title{
+   text-transform: none;
+}

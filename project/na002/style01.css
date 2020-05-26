@@ -1,0 +1,43 @@
+@charset "UTF-8";
+body {
+   background-color: #33ffff;
+}
+
+
+header{
+   background-color: #3300ff;
+}
+footer{
+   background-color: #cccccc;
+}
+header p{
+   color: #ffffff;
+}
+h1 {
+   background-color: #cccccc;
+   color: #ff5555;
+   font-size: 2rem;
+   text-align: justify;
+   font-family: 'Roboto Mono', monospace;
+}
+h2{
+   color: #0000ff;
+   font-family: serif;
+   font-size: 20px;
+   text-align: justify;
+}
+h3{
+   color: #3300ff;
+}
+h2,p{
+  text-align: center;
+}
+p,li{
+   color: #003333;
+   font-family: "メイリオ";
+   font-size: 15px;
+   line-height: 1.7;
+}
+div p{
+   color: red;
+}

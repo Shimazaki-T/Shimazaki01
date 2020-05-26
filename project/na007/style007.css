@@ -1,0 +1,32 @@
+@charset "UTF-8";
+header{
+  background-color: #33ccff;
+  color: #ffffff;
+}
+
+header a{
+  padding-left: 1rem;
+  color: #ffffff;
+}
+
+main{
+  background-color: #0033cc;
+  background-image: url(img7-1.jpg);
+  background-size: cover;
+  color:#ffffff;
+  height: 1000px;
+}
+
+a{
+  color:#ffffff;
+}
+
+.wrapper{
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+.container{
+  display: grid;
+  justify-content: space-between;
+}
