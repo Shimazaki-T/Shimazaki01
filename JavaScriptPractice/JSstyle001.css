@@ -1,0 +1,65 @@
+@charset "UTF-8"
+
+header {
+ background-color: #aaacff;
+ height:300px;
+}
+
+main{
+ background-color: #aaaaaa;
+ transition: all 300ms 0s ease;
+ height:500px;
+ animation: rotation 2s ease 0s 1 alternate none running;
+ animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  0% {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  25% {
+    background: #aaffff;
+    color: #333333;
+  }
+
+  50% {
+    background: #aaccff;
+    color: #666666;
+  }
+
+  75% {
+    background: #aaaaff;
+    color: #cccccc;
+  }
+
+  100% {
+    background: #6666ff;
+    color: #ffffff;
+  }
+}
+
+footer{
+ background-color: #33acff;
+ color: #ffffff;
+}
+
+h1{
+  color: #ffffff;
+  background-color: #ffaa00;
+  height: 3rem;
+  transition-property: all;
+  transition-delay: 300ms;
+  transition-duration: 600ms;
+}
+
+h1:hover{
+  color: #ff3333;
+  background-color: #ffaaaa;
+  height: 250px;
+}
+
+h2{
+  color: #ffffff;
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>JavaScriptPractice</title>
+ <script src="main.js"></script>
+</head>
+
+<body>
+ <script type="text/javascript">
+  document.write("ブラウザ:",navigator.appName);
+ </script>
+ <script type="text/javascript">
+  function SWopen(){
+    window.open("../project/natop.html");
+  }
+ </script>
+
+ <form>
+   <input type="button" value="自爆スイッチ" onclick="SWopen()">
+   <input type="button" value="うんこスイッチ" onClick="EVENT1()">
+   <input type="button" value="うんこスイッチ" onClick="EVENT2()">
+   <input type="button" value="うんこスイッチ" onClick="EVENT3A()">
+   <input type="button" value="きれいにする" onClick="EVENT3B()">
+ </form>
+</body>
+</html>
