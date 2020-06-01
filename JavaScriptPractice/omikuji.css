@@ -1,0 +1,29 @@
+@charset "UTF-8"
+body{
+  background-color: #efefef;
+}
+
+#button {
+  width: 200px;
+  height: 200px;
+  background-color: #ef454a;
+  border-radius: 50%; /*divを円形にする*/
+  margin: 30px auto;  /*divの位置の調整*/
+  text-align: center; /*div内の文字の位置の調整*/
+  line-height: 200px; /*div内の文字の位置の調整*/
+  color: #ffffff;
+  font-weight: bold; /*div内の文字を太くする*/
+  font-size: 42px; /*div内の文字を大きくする*/
+  cursor: pointer; /*divにカーソルを持っていくとカーソルの形が変わる*/
+  box-shadow: 0 10px 0 #d1483e; /*divに影を作れる*/
+  user-select: none; /*ドラッグしても選択ができなくなる*/
+}
+
+#button:hover{
+  opacity: 0.9; /*ボタンにカーソルを乗せると半透明になる*/
+}
+
+#button:active{ /*ボタンの動作時のスタイル*/
+  box-shadow: 0 5px 0 #d1483e;
+  margin: 35px auto;
+}
