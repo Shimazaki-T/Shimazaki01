@@ -17,6 +17,7 @@
       }
   //  const n = Math.floor(Math.random() * results.length);
   //  button.textContent = results[n]; //resultsを定義してその中の何番目かを適当に出す or
+
   //  button.textContent = results[Math.floor(Math.random() * results.length)]; //全部つっこむかの二択
 
 
@@ -34,5 +35,18 @@
   //   break;
 
    //}
+  });
+
+  button.addEventListener('dblclick', () => {
+   button.textContent = 'おみくじ';
+    //  const n = Math.random();
+    //  if (n < 0.05){
+    //     button.textContent = '？'; //5%で大吉
+    //  }　else if (n <0.2){
+    //     button.textContent = '？'; //15%で中吉
+    //  }  else {
+    //     button.textContent = '？'; //残りは凶！笑
+    //  }
+
   });
 }

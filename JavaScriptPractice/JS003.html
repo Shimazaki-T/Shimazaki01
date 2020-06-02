@@ -13,11 +13,42 @@
     <p>―――すべての猫好きたちに捧ぐ...</p>
   </header>
   <main>
-    <h2>猫が好きでたまらない</h2>
+    <h2>猫が好きでたまらない<br>あなたへのおすすめ猫</h2>
+    <div id="button">ねこみくじ</div>
+    <h3 id="calculate">ねこの値段税抜→税込換算<h3>
   </main>
   <footer>
     <h3>猫と暮らしたい</h3>
     <p>そのためにはひたすらJavaScriptとCSSアニメーションの練習をせなあかん</p>
+    <img src="ShimazakiLogo.png">
   </footer>
+  <script>
+  calculate.addEventListener('dblclick', () => {
+   var tax = 1.1;
+   var price = prompt('猫をペットショップで買ったら税込みいくら？\n税抜き値段を入れてください');
+   var result = Math.round(price * tax);
+   alert('値段の合計は、消費税込みで' + result + '円です。');
+   });
+
+
+   const button = document.getElementById('button');
+
+   button.addEventListener('click', () => {
+
+       const n = Math.random();
+       if (n < 0.05){
+          button.textContent = '白猫'; //5%で大吉
+       }　else if (n <0.2){
+          button.textContent = '黒猫'; //15%で中吉
+       }  else if (n <0.3){
+          button.textContent = '三毛猫';
+       }  else if (n <0.55){
+          button.textContent = 'ちび猫';
+       }  else {
+          button.textContent = '雑種'; //残りは凶！笑
+       }
+
+   });
+  </script>
  </body>
 </html>
