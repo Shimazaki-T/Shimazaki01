@@ -3,12 +3,13 @@
 header {
  background-color: #aaacff;
  height:300px;
+ text-align:center;
 }
 
 main{
  background-color: #aaaaaa;
  transition: all 300ms 0s ease;
- height:500px;
+ height: 600px;
  animation: rotation 2s ease 0s 1 alternate none running;
  animation-iteration-count: infinite;
 }
@@ -52,16 +53,26 @@ h1{
   transition-property: all;
   transition-delay: 300ms;
   transition-duration: 600ms;
+  text-align: center;
 }
 
 h1:hover{
   color: #ff3333;
   background-color: #ffaaaa;
   height: 250px;
+  text-align: center;
 }
 
 h2{
   color: #ffffff;
+  text-align: center;
+}
+
+#calculate{
+  text-align: center;
+  padding:50px;
+  user-select: none;
+
 }
 
 #button {
