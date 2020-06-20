@@ -47,3 +47,7 @@ li{
   background-image: url(images/0501.jpg);
   background-size:cover;
 }
+
+#works{
+  background-image:linear-gradient(#55aaff, #aaccff);
+}
