@@ -8,11 +8,12 @@
  </head>
  <body>
    <header class="wrapper container0">
-     <div id="topicon">
+     <div id="topicon" class="wrapper">
       <h1>エンジニアTのサテライト</h1>
       <p>デザインとゲームがしたい人のやってる勉強の話</p>
      </div>
      <nav>
+       <p id="now">N</p>
        <ol class="container1">
          <li><a href="#about">About</a></li>
          <li><a href="#profile">Profile</a></li>
@@ -23,11 +24,11 @@
    </header>
    <div class="container1">
     <main class="wrapper">
-      <article id="about">
+      <article id="about" class="wrapper">
        <h2>About</h2>
        <p>2020年、かっこよくておしゃれなものを演出したくなった私はHTML、CSS、そしてJavaScriptを勉強してWebデザイナーかWebエンジニアになるぞと思った。早く案件獲得して一人前のWebエンジニアになりたいです。がんばります。</p>
       </article>
-      <article id="profile">
+      <article id="profile" class="wrapper">
        <h2>Profile</h2>
        <ul>
          <li>名前：T.Shimazaki</li>
@@ -36,16 +37,18 @@
          <li>勉強予定の言語：PHP,Python,C#</li>
          <li>好きな食べ物：ラーメン、まぜそば、甘いもの</li>
        </ul>
+       <p>最新情報:<span id="latest">new</span></p>
       </article>
-      <article id="works">
+      <article id="works" class="wrapper">
         <h2>Works</h2>
          <p><a href="../project/natop.html">Nomiso Archive</a>:HTMLとCSSとJavaScriptの練習のために作った練習用サイト</p>
          <p><a href="../project/na004.html">Talk about Music!</a>主に音楽について語るブログ</p>
       </article>
-      <article id="contact">
+      <article id="contact" class="wrapper">
         <h2>Contact</h2>
          <p>E-mail:</p>
-         <p>Twitter:@ShimaZaki31
+         <p>Twitter:@ShimaZaki31</p>
+         <p id="tell">伝えたいことがあればこの文をクリック</p>
       </article>
     </main>
     <aside class="wrapper">
@@ -56,7 +59,29 @@
      <small> &copy; 2020 Shimazaki</small>
    </footer>
    <script>
-    window.alert('見る気か？')
+
+      const answer = window.prompt('アレする？');
+      if(answer === 'yes'){
+        window.alert('スケベやのう');
+      } else if(answer === 'no'){
+        window.alert('Noやのう');
+      } else{
+        if(window.confirm('見るか見ないか、話はそれだけ。')){
+           window.alert('OK!見る');
+          }else {
+            window.alert('No,見ない');
+          };
+      };
+
+    document.getElementById('now').textContent = new Date();
+
+    document.getElementById('latest').textContent = '昨日の昼食は親子丼でした！'
+
+    const tell = document.getElementById('tell');
+    tell.addEventListener('click', () => {
+     window.alert('見るんかい！');
+    });
+
    </script>
  </body>
 </html>
