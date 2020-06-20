@@ -15,7 +15,7 @@
 }
 
 header{
-  background-color:#ffaa44;
+  background-color:#99aaff;
 }
 
 main{
@@ -30,14 +30,20 @@ h1 {
   color: #6666ff;
 }
 
+h2{
+  font-family:monospace;
+}
+
 ol {
   margin: 160px 80px 20px 80px;
 }
 
 li{
-  padding: auto 30px;
+  margin: auto 10px 15px 30px;
 }
 
 #profile{
-  background-image: url(image/0501.jpg);
+  height:400px;
+  background-image: url(images/0501.jpg);
+  background-size:cover;
 }
