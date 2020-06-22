@@ -13,6 +13,7 @@
       <p>デザインとゲームがしたい人のやってる勉強の話</p>
      </div>
      <nav>
+       <p id="now">N</p>
        <ol class="container1">
          <li><a href="#about">About</a></li>
          <li><a href="#profile">Profile</a></li>
@@ -36,6 +37,7 @@
          <li>勉強予定の言語：PHP,Python,C#</li>
          <li>好きな食べ物：ラーメン、まぜそば、甘いもの</li>
        </ul>
+       <p>最新情報:<span id="latest">new</span></p>
       </article>
       <article id="works" class="wrapper">
         <h2>Works</h2>
@@ -45,7 +47,8 @@
       <article id="contact" class="wrapper">
         <h2>Contact</h2>
          <p>E-mail:</p>
-         <p>Twitter:@ShimaZaki31
+         <p>Twitter:@ShimaZaki31</p>
+         <p id="tell">伝えたいことがあればこの文をクリック</p>
       </article>
     </main>
     <aside class="wrapper">
@@ -56,7 +59,35 @@
      <small> &copy; 2020 Shimazaki</small>
    </footer>
    <script>
-    window.alert('見る気か？')
+
+      const answer = window.prompt('アレする？');
+      if(answer === 'yes'){
+        window.alert('スケベやのう');
+      } else if(answer === 'no'){
+        window.alert('Noやのう');
+      } else{
+        if(window.confirm('見るか見ないか、話はそれだけ。')){
+           window.alert('OK!見る');
+          }else {
+            window.alert('No,見ない');
+          };
+      };
+
+    document.getElementById('now').textContent = new Date();
+
+    document.getElementById('latest').textContent = '昨日の昼食は親子丼でした！'
+
+    const tell = document.getElementById('tell');
+    const hour = new Date().getHours();
+    tell.addEventListener('click', () => {
+
+    if(hour <= 23 && hour > 21){
+      window.alert('sukebeyanou');
+    } else {
+     window.alert('見るんかい！');
+     };
+    });
+
    </script>
  </body>
 </html>
