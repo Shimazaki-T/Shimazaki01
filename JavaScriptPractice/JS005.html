@@ -43,6 +43,8 @@
         <h2>Works</h2>
          <p><a href="../project/natop.html">Nomiso Archive</a>:HTMLとCSSとJavaScriptの練習のために作った練習用サイト</p>
          <p><a href="../project/na004.html">Talk about Music!</a>主に音楽について語るブログ</p>
+         <input type="text" id="act01"><input type="submit">
+         <p id="output01">output01</p>
       </article>
       <article id="contact" class="wrapper">
         <h2>Contact</h2>
@@ -78,9 +80,23 @@
     document.getElementById('latest').textContent = '昨日の昼食は親子丼でした！'
 
     const tell = document.getElementById('tell');
+    const hour = new Date().getHours();
     tell.addEventListener('click', () => {
+
+    if(hour <= 23 && hour > 21){
+      window.alert('sukebeyanou');
+    } else {
      window.alert('見るんかい！');
+     };
     });
+
+    function total(act01){
+      const tax = 0.1;
+      return act01 + act01 * tax;
+    };
+
+
+    document.getElementById('output01').textContent = 'お値段は' + total() + '円（税込）です。';
 
    </script>
  </body>
