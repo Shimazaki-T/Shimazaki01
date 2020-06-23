@@ -101,6 +101,10 @@ nav p{
   max-width: 30%;
   min-width: 20%;
 }
+.item05{
+  margin: 0px;
+  padding: 45px 10px;
+}
 
 .Mainicon p{
   margin: 0 auto;
@@ -147,4 +151,5 @@ time{
 }
 .powered{
   text-align:center;
+  padding: 45px 0 45px 150px;
 }
