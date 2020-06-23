@@ -14,7 +14,7 @@ const number = 8;
    console.log("私、失敗しないので。");
  }
 const hope = 18;
-console.log(hope <10);
+console.log(hope < 10);
  if(true){
    console.log("私。");
  } else{
