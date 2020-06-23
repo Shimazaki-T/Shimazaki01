@@ -3,6 +3,7 @@
 .wrapper{
   max-width: 80%;
   margin: 0 auto;
+  padding: 0 3%;
 }
 
 .container0{
@@ -14,6 +15,7 @@
   display:flex;
 }
 
+
 header{
   background-color:#99aaff;
 }
@@ -24,22 +26,34 @@ main{
 
 aside{
   max-width: 20%;
+  height: 600px;
+  width: 200px;
+  background-color: #3399cc;
 }
 
 h1 {
-  color: #6666ff;
+  color: #6633ff;
 }
 
 h2{
   font-family:monospace;
+  font-size:25px;
 }
 
 ol {
-  margin: 160px 80px 20px 80px;
+  margin: 30px 80px 20px 80px;
 }
 
 li{
   margin: auto 10px 15px 30px;
+}
+
+#now{
+  margin:160px 0 20px 80px;
+}
+
+#about{
+  height: 450px;
 }
 
 #profile{
@@ -49,5 +63,6 @@ li{
 }
 
 #works{
+  height:450px;
   background-image:linear-gradient(#55aaff, #aaccff);
 }
