@@ -23,16 +23,45 @@
    <input type="button" value="うんこスイッチ" onClick="EVENT3A()">
    <input type="button" value="きれいにする" onClick="EVENT3B()">
  </form>
+ <h1>好きな生き物</h1>
+ <ul id="list">
+ </ul>
+ <h1>気になっている本</h1>
+  <table>
+    <tr>
+      <td id="title"></td>
+      <td id="price"></td>
+      <td id="stock"></td>
+    </tr>
+  </table>
  <script>
    //全てのコンソール芸人にこれを託す...
+   //配列の話
    let todo = ['inu', 'neko', 'kingyo', 'oumu'];
    todo.push('hebi');
    console.log(todo[0]);
    for(let item of todo){
      console.log(item);
      const li =`<li>${item}</li>`;
-     console.log(li);
+     //console.log(li);
+     document.getElementById('list').insertAdjacentHTML('beforeend', li);
    }
+   //オブジェクトの話
+   let jsbook = {title: 'JavaScript入門', price: 2500, stock: 3};
+
+  /* console.log(jsbook);
+   console.log(jsbook.title);
+   console.log(jsbook['price']);
+   jsbook.stock = 10;
+   console.log(jsbook.stock);*/
+
+  /*for(let p in jsbook) {
+    console.log(p + '=' + jsbook[p]);
+  }*/
+
+  document.getElementById('title').textContent = jsbook.title;
+  document.getElementById('price').textContent = jsbook.price + '円';
+  document.getElementById('stock').textContent = jsbook.stock;
  </script>
 </body>
 </html>
