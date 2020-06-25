@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+body{
+  background-color: #eeeeee;
+}
+
+.containertop{
+  display:flex;
+  justify-content: space-between;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper{
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.forborder{
+  border-top: 20px solid #33aaaa;
+  margin: -10px -50px 0 -50px;
+}
+
+h1{
+  margin:50px 0 20px 0;
+}
+
+.topitem{
+  font-size: 8px;
+  padding: 10px 4px 10px 4px;
+}
+
+.topitem span{
+  color:red;
+}
+
+.toptel{
+  font-size:25px;
+  padding: 5px 0 5px 10px;
+}
+
+.toptime{
+  border: 0.5px solid #cccccc;
+  text-align: center;
+}
+
+nav{
+  gap: 0px;
+}
+.nav01{
+  background-image: linear-gradient(#33ffee, #33ccff);
+  border-radius: 5%;
+  border: 0.5px solid #ccffff;
+  color:#fff;
+  text-align: center;
+  padding:10px 15px;
+  width:184px;
+}
+.nav02{
+  background-image: linear-gradient(#33ffee, #33ccff);
+  border: 0.5px solid #ccffff;
+  color:#fff;
+  text-align: center;
+  padding:10px 15px;
+  width:184px;
+}
+.nav03{
+  background-image: linear-gradient(#33ffee, #33ccff);
+  border-radius: 5%;
+  border: 0.5px solid #ccffff;
+  color:#fff;
+  text-align: center;
+  padding:10px 15px;
+  width:184px;
+}
+.navi{
+  font-size: 10px;
+  padding: 0;
+  margin:0;
+}
+
+main img{
+  margin:15px 15px 15px 0;
+}
+
+main div{
+  background-color: #ffffff;
+}
+
+article{
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 3px solid #aaccff;
+  font-size: 14px;
+  padding: 20px 5px 10px 0px;
+  margin: 0 0 10px 15px;
+}
