@@ -13,6 +13,11 @@ body{
   justify-content: space-between;
 }
 
+.containerft{
+  display: flex;
+  justify-content: flex-start;
+}
+
 .wrapper{
   max-width: 920px;
   margin: 0 auto;
@@ -81,16 +86,44 @@ nav{
   margin:0;
 }
 
+.Uline{
+  font-size:12.5px;
+  border-bottom: 1.5px solid #9999ff;
+  margin-top:15px;
+  margin-bottom:10px;
+  padding-bottom:20px;
+  text-align: right;
+}
+
+.rights{
+  text-align: center;
+  font-size: 12.5px;
+}
+
+main{
+  width: 640px;
+  height: 700px;
+  order: 2;
+}
+
 main img{
-  margin:15px 15px 15px 0;
+  margin:15px 15px 5px 0;
 }
 
 main div{
   background-color: #ffffff;
+  font-size: 14px;
+  height:380px;
+}
+
+main p {
+  margin: 5px,15px;
 }
 
 article{
-  text-align: center;
+  text-align: left;
+  border-bottom: 1px solid #cccccc;
+  padding: 10px 10px;
 }
 
 h2 {
@@ -98,4 +131,57 @@ h2 {
   font-size: 14px;
   padding: 20px 5px 10px 0px;
   margin: 0 0 10px 15px;
+}
+
+time{
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+
+aside{
+  order:1;
+}
+
+aside div{
+  background-color:white;
+  border: solid 1px #22aaff;
+  margin: 20px 0px;
+  width: 260px;
+  height: 235px;
+}
+
+aside ul{
+  list-style-position: inside;
+  margin-left:20px;
+}
+aside li{
+  padding: 8px 0;
+  max-width:220px;
+  border-bottom: 1px solid #6666ff;
+}
+
+h3{
+  background-color: #2288c6;
+  color:white;
+  padding: 8px 0 8px 20px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  width:260px;
+}
+
+footer{
+  padding-top: 15px;
+}
+
+footer ul{
+  background-color: #559cff;
+  list-style-position: inside;
+  width:920px;
+  padding-left: 20px;
+}
+
+footer li{
+  margin-right:10px;
+  font-size:14px;
 }
