@@ -62,6 +62,16 @@
   document.getElementById('title').textContent = jsbook.title;
   document.getElementById('price').textContent = jsbook.price + '円';
   document.getElementById('stock').textContent = jsbook.stock;
+
+  var i = 1;
+  var result = 0;
+  while (result <= 100) {
+     result += i;
+     ++i;
+  }
+  if (result > 100) {
+    console.log("最後に足した整数は" + (i-1) + "です。");
+  }
  </script>
 </body>
 </html>
