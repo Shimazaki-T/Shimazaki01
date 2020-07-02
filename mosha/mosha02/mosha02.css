@@ -175,13 +175,17 @@ footer{
 }
 
 footer ul{
-  background-color: #559cff;
+  background-color: #77acff;
+  color:#ffffff;
   list-style-position: inside;
   width:920px;
+  height:25px;
   padding-left: 20px;
 }
 
 footer li{
   margin-right:10px;
   font-size:14px;
+  text-align: center;
+  margin-top:3px;
 }
