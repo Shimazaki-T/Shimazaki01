@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.passed {
+    font-size: 24px;
+    color: #e74c3c;
+}
+
+.button {
+    background-color: #fcfcfa;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 2px 7px #3338;
+    font-size: 18px;
+    padding:8px 16px;
+}
+
+.goukaku70 {
+    background-color: #d3c232;
+    color: #454553;
+    text-align:center;
+    margin-top:16px;
+}
+
+.goukaku702 {
+    background-color: #33c2ff;
+    color: #333353;
+    text-align:center;
+}

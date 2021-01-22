@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/vuejs03.css">
+    <title>Vuejs02</title>
+</head>
+<body>
+    <div id="app">
+      <header>
+        <h1>The Great Products</h1>
+        <nav class="wrapper1">
+         <button
+          v-if="count === 0"
+          class="button2"
+         >prev</button>
+         <button
+          v-if="count >= 1"
+          class="button"
+          @click="decrement"
+         >prev</button>
+         <button
+          v-if="count !== 0"
+          class="button"
+          @click="zeropoint"
+         >A</button>
+         <button
+          v-if="count === 0"
+          class="button2"
+         >A</button>
+         <button
+          v-if="count !== 1"
+          class="button"
+          @click="onepoint"
+         >B</button>
+         <button
+          v-if="count === 1"
+          class="button2"
+         >B</button>
+         <button
+          v-if="count !== 2"
+          class="button"
+          @click="twopoint"
+         >C</button>
+         <button
+          v-if="count === 2"
+          class="button2"
+         >C</button>
+         <button
+          v-if="count !== 3"
+          class="button"
+          @click="threepoint"
+         >D</button>
+         <button
+          v-if="count === 3"
+          class="button2"
+         >D</button>
+         <button
+          v-if="count !== 4"
+          class="button"
+          @click="fourpoint"
+         >E</button>
+         <button
+          v-if="count === 4"
+          class="button2"
+         >E</button>
+         <button
+          v-if="count !== 5"
+          class="button"
+          @click="fivepoint"
+         >F</button>
+         <button
+          v-if="count === 5"
+          class="button2"
+         >F</button>
+         <button
+          v-if="count <= 4"
+          class="button"
+          @click="increment"
+         >next</button>
+         <button
+          v-if="count === 5"
+          class="button2"
+         >next</button>
+        </nav>
+      </header>
+      <main>
+        <p v-if="count === 5" class="count5">{{ count }}/5<br>Rank S</p>
+        <p v-else-if="count === 4" class="count4">{{ count }}/5<br>Rank A+</p>
+        <p v-else-if="count === 3" class="count3">{{ count }}/5<br>Rank A</p>
+        <p v-else-if="count === 2" class="count2">{{ count }}/5<br>Rank B+</p>
+        <p v-else-if="count === 1" class="count1">{{ count }}/5<br>Rank B</p>
+        <p v-else class="count0">{{ count }}/5<br>Rank C</p>
+
+        <p v-if="count === 5" class="ranks">Rank S</p>
+        <p v-else-if="count === 4" class="ranka">Rank A+</p>
+        <p v-else-if="count === 3" class="ranka">Rank A</p>
+        <p v-else-if="count === 2" class="rankb">Rank B+</p>
+        <p v-else-if="count === 1" class="rankb">Rank B-</p>
+        <p v-else class="rankc">Rank C</p>
+        <div
+          v-if="count === 5"
+          class="ranks">
+          <h2>Saikou!!</h2>
+          <p>Rank Sコースの方への豪華特典はこちら！</p>
+          <div class="wrapper1">
+            <div class="content1">
+             <h3>豪華特典その1</h3>
+             <p>最強のWi-Fi</p>
+            </div>
+            <div class="content1">
+              <h3>豪華特典その2</h3>
+              <p>高級コーヒー</p>
+            </div>
+          </div>
+          <div class="wrapper1">
+            <div class="content1">
+             <h3>豪華特典その3</h3>
+             <p>最強のシート</p>
+            </div>
+            <div class="content1">
+              <h3>豪華特典その4</h3>
+              <p>めっちゃいい水</p>
+            </div>
+          </div>
+          
+          <div>
+            <div>
+             <h3>豪華特典その3</h3>
+             <p>最強のシート</p>
+            </div>
+            <transition name="fade">
+             <div v-if="show">
+              <h3>豪華特典その4</h3>
+              <p>めっちゃいい水</p>
+             </div>
+            </transition>
+          </div>
+          
+        </div>
+        <div
+          v-else-if="count === 4"
+          class="ranka">
+          <h2>Goukaku!!</h2>
+          <p>Rank Aを勝ち取った人だけに表示されます！</p>
+          <div class="wrapper1">
+            <div class="content1">
+             <h3>特典その1</h3>
+             <p>いいWi-Fi</p>
+            </div>
+            <div class="content1">
+              <h3>特典その2</h3>
+              <p>いいコーヒー</p>
+            </div>
+          </div>
+        </div>
+        <div
+          v-else-if="count === 3"
+          class="ranka">
+          <h2>Goukaku!!</h2>
+          <p>Rank Aを勝ち取った人だけに表示されます！</p>
+          <div class="wrapper1">
+            <div class="content1">
+             <h3>特典その1</h3>
+             <p>いいWi-Fi</p>
+            </div>
+            <div class="content1">
+              <h3>特典その2</h3>
+              <p>いいコーヒー</p>
+            </div>
+          </div>
+        </div>
+        <div
+          v-else-if="count === 2"
+          class="rankb">
+          <h2>Oshii!!</h2>
+          <p>Rank Bの人だけに表示されます！</p>
+        </div>
+        <div
+          v-else-if="count === 1"
+          class="rankb">
+          <h2>Oshii!!</h2>
+          <p>Rank Bの人だけに表示されます！</p>
+        </div>
+        <div
+          v-else-if="count === 0"
+          class="rankc">
+          <h2>Za-ko!!</h2>
+          <p>Rank Cの人だけに表示されます！</p>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./script/vuejs03.js"></script>
+</body>
+</html>

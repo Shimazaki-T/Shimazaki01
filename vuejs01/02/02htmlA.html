@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/vuejs02.css">
+    <title>Vuejs02</title>
+</head>
+<body>
+    <div id="app">
+        <button
+          v-if="count <= 4"
+          class="button"
+          @click="increment"
+        >+1</button>
+        <button
+          v-if="count >= 1"
+          class="button"
+          @click="decrement"
+        >-1</button>
+        <button
+          v-if="count !== 3"
+          class="button"
+          @click="threepoint"
+        >3</button>
+        <p>{{ count }} /5</p>
+        <p  
+          v-if="count >= 5"
+          class="passed"
+          >Rank S</p>
+        <p v-else-if="count >= 3">Rank A</p>
+        <p v-else-if="count >= 2">Rank B+</p>
+        <p v-else>Rank B-</p>
+        <div
+          v-if="count >= 5"
+          class="goukaku702">
+          <h2>Saikou!!</h2>
+          <p>この文章は、見事Rank Sを勝ち取った人だけに表示されます！</p>
+        </div>
+        <div
+          v-else-if="count >= 3"
+          class="goukaku70">
+          <h2>Goukaku!!</h2>
+          <p>この文章は、見事合格を勝ち取った人だけに表示されます！</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./script/vuejs02.js"></script>
+</body>
+</html>
